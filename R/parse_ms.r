@@ -3,7 +3,7 @@ make_flag <- function(flag, vals) {
   # make a unix CL flag by appending one or two dashes. underscore turned into -
   dash <- "-"
   if (nchar(flag) > 1)
-    dash <- "--"
+    dash <- "-"
   # if a logical value is passed, e.g. T=TRUE, turn that into -T
   if (is.logical(vals)) {
     if (vals)
